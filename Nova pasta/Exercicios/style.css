@@ -1,0 +1,54 @@
+.main-container{
+    display: flex;
+    width: 100%;
+    height: 40%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.tesla-img {
+    width: 900px;
+}
+
+.black-item[type=checkbox] {
+    accent-color: black;
+}
+
+.silver-item[type=checkbox] {
+    accent-color: silver;
+}
+
+.buy-back{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rainbow{
+    width: 100vw;
+    height: 100vh;
+    background-color: blue;
+    animation: animate 3s linear infinite;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: white;
+    flex-direction: column;
+}
+
+.home-icon{
+    width: 50px;
+    height: 50px;
+    color: white;
+}
+@keyframes animate {
+    0% {
+        background-color: blue;
+    }
+    50% {
+        background-color: red;
+    }
+    100% {
+        background-color: green;
+    }
+}
