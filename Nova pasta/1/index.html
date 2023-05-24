@@ -1,28 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja-jp">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title></title>
+    <link rel="stylesheet" href="form.html">
+    <title>Órgão Colegiado</title>
 </head>
 <body>
-    <table border="1">
-        <tr>
-            <td colspan="3">Celula com 3 colunas</td>
-            <td>coluna 4</td>
-            <td>coluna 5</td>
-        </tr>
-        <tr>
-            <td >coluna 1</td>
-            <td >coluna 2</td>
-            <td >coluna 3</td>
-            <td >coluna 4</td>
-            <td >coluna 5</td>
-        </tr>
+    <table border="1" style="background-color: blue; width: 100%;">
+        <th style="color: white;">Cadastro de Conselho</th>
     </table>
 
-    <h1>SALVE RAPAZIADINHA</h1>
+    <form name="form_conselho" method="post">
+        <h4>Progama</h4>
+        <table style="width: 100%;">
+            <tr>
+                <td style="width: 15%; font-family: Arial, Helvetica, sans-serif; font-size: 3;">Unidade</td>
+                <td><input type="text" name="codUnidade" size="5"></td>
+                <td><input type="text" name="unidade" size="80"></td>
+            </tr>
+            <tr>
+                <td style="width: 15%; font-family: Arial, Helvetica, sans-serif; font-size: 3;">Programa</td>
+                <td><input type="text" name="codPrograma" size="5"></td>
+                <td><input type="text" name="programa" size="80"></td>
+            </tr>
+        </table>
+
+        <h4>Conselho de Programa de Pós Graduação</h4>
+        <table style="width: 100%;">
+            <tr>
+                <td style="width: 15%; font-size: 3; font-family: Arial, Helvetica, sans-serif;">Código</td>
+                <td><input type="text" name="codigo" size="5"></td>
+            </tr>
+            <tr>
+                <td style="width: 15%; font-size: 3; font-family: Arial, Helvetica, sans-serif;">Nome</td>
+                <td><input type="text" name="nome" size="100"></td>
+            </tr>
+            <tr>
+                <td style="width: 15%; font-size: 3; font-family: Arial, Helvetica, sans-serif;">Tipo</td>
+                <td>
+                    <select name="tipo">
+                        <option ></option>
+                        <option value="1">COMISSOES TRANSITORIAS DE ESTUDOS</option>
+                        <option value="2">CONSELHOS DE DEPARTAMENTO</option>
+                        <option value="3">COMISSOES PERMANENTE DE UNIDADE ADMINISTRATIVA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 15%; font-size: 3; font-family: Arial, Helvetica, sans-serif;">Fundamento</td>
+                <td>
+                    <textarea name="fundamento" cols="50" rows="3"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" colspan="2">
+                    <a href="form.html"><input type="submit" value="SALVAR"></a>
+                </td>
+            </tr>
+        </table>
+    </form>
 </body>
 </html>
