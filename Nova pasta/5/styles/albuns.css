@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background-image: url(../img/Albuns.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    flex-direction: column;
+}
+
+.albuns-list{
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.albun-cape{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+}
+
+.albun-cape:hover{
+    opacity: 80%;
+    transition: 1s;
+    scale: 1.1;
+}
+
+a{
+    text-decoration: none;
+}
+
+.button-shows{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 15px;
+    opacity: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 20px;
+}
+
+.button-shows p{
+    color: black;
+}
+
+.button-shows:hover{
+    opacity: 100%;
+    transition: 1s;
+    scale: 1.1;
+}
